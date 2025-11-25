@@ -1,6 +1,7 @@
 import Component from "@glimmer/component";
 import { dasherize } from "@ember/string";
 import concatClass from "discourse/helpers/concat-class";
+import I18n from "I18n";
 
 function normalizeLocale(locale) {
   return locale?.trim().toLowerCase().replace(/[-_]/g, "_");
@@ -26,7 +27,10 @@ export default class CustomHeaderLinks extends Component {
       if (!linkText || (locale && normalizeLocale(locale) !== currentLocale)) {
         return result;
       }
+      
+      const translatedTitle = linkTitle?.includes(".") ? I18n.t(themePrefix(linkTitle)) : linkTitle;
 
+     
       const linkClass = `${dasherize(linkText)}-custom-header-links`; // legacy name
 
       const anchorAttributes = {
@@ -41,7 +45,7 @@ export default class CustomHeaderLinks extends Component {
         locale: locale ? `headerLink--${locale}` : null,
         linkClass,
         anchorAttributes,
-        linkText,
+        linkText: translatedTitle,
       });
 
       return result;
