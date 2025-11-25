@@ -1,4 +1,16 @@
 en:
+  js:
+    header_link:
+      first: First title
+      second: Second title
+      third: Third title
+      fourth: Fourth title
+      fifth: Fifth title
+      sixth: Sixth title
+      seventh: Seventh title
+      eighth: Eighth title
+      ninth: Ninth title
+      tenth: Tenth title
   theme_metadata:
     settings:
       links_position: "Note that when links are displayed on the left, they're automatically hidden while scrolling within topics to make room for the title"

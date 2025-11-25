@@ -5,6 +5,18 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  js:
+    header_link:
+      first: 第一个标题
+      second: 第二个标题
+      third: 第三个标题
+      fourth: 第四个标题
+      fifth: 第五个标题
+      sixth: 第六个标题
+      seventh: 第七个标题
+      eighth: 第八个标题
+      ninth: 第九个标题
+      tenth: 第十个标题
   theme_metadata:
     settings:
       links_position: "请注意，当链接显示在左侧时，在话题内滚动时它们会自动隐藏，以便为标题留出空间"
@@ -17,7 +29,7 @@ zh_CN:
               description: 链接的文本
             title:
               label: 标题
-              description: 链接的标题属性
+              description: 链接的标题属性(如果值带有.符号则会进行多语言翻译)
             url:
               label: URL
               description: 链接的 URL
